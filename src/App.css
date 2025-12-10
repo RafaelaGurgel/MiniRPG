@@ -51,6 +51,7 @@ body {
 .nav-brand h1 {
   font-size: 1.8rem;
   background: linear-gradient(45deg, #00dbde, #0080ff);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
