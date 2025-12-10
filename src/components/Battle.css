@@ -1,0 +1,238 @@
+/* BATTLE SCREEN */
+.battle-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: rgba(10, 14, 36, 0.8);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(0, 255, 255, 0.2);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+.battle-title {
+  color: white;
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 15px #00ffff, 0 0 30px #0080ff;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+/* CAMPO DE BATALHA */
+.battle-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+/* PERSONAGEM */
+.battle-character {
+  flex: 1;
+  background: rgba(20, 25, 45, 0.9);
+  border-radius: 16px;
+  padding: 1.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  min-width: 300px;
+}
+
+.character-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.battle-sprite {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  border: 2px solid rgba(0, 255, 255, 0.3);
+  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.6));
+}
+
+.character-info h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #00ffff;
+  text-shadow: 0 0 8px rgba(0, 255, 255, 0.5);
+}
+
+/* BARRA DE VIDA */
+.health-container {
+  margin: 1rem 0;
+}
+
+.health-bar {
+  width: 100%;
+  height: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.health-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #48bb78, #38a169);
+  transition: width 0.5s ease;
+  box-shadow: 0 0 10px rgba(72, 187, 120, 0.5);
+}
+
+.enemy-health {
+  background: linear-gradient(90deg, #f56565, #e53e3e);
+  box-shadow: 0 0 10px rgba(245, 101, 101, 0.5);
+}
+
+.health-text {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #a0aec0;
+  margin-top: 0.5rem;
+}
+
+/* BOTÕES DE AÇÃO */
+.actions-container {
+  margin-top: 1.5rem;
+  padding: 1.2rem;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.actions-title {
+  color: #00ffff;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  text-align: center;
+  text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+}
+
+.action-btn {
+  width: 100%;
+  padding: 0.9rem;
+  margin: 0.5rem 0;
+  background: linear-gradient(135deg, #00adb5, #0097a7);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid transparent;
+}
+
+.action-btn:hover:not(:disabled) {
+  background: linear-gradient(135deg, #0097a7, #00adb5);
+  transform: translateY(-3px);
+  border-color: #00ffff;
+  box-shadow: 0 5px 20px rgba(0, 255, 255, 0.3);
+}
+
+.action-btn:disabled {
+  background: #4a5568;
+  color: #a0aec0;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* VS CENTRAL */
+.vs-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1.5rem;
+}
+
+.vs-text {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ff6b6b;
+  text-shadow: 0 0 10px #ff6b6b, 0 0 20px #ff4757;
+  margin: 1rem 0;
+}
+
+.turn-indicator {
+  font-size: 1rem;
+  color: #00ffff;
+  background: rgba(0, 255, 255, 0.1);
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  border: 1px solid #00ffff;
+  text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+}
+
+/* LOG DE BATALHA */
+.battle-log {
+  margin-top: 2rem;
+  padding: 1.2rem;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.log-title {
+  color: #00ffff;
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+
+.log-entry {
+  padding: 0.6rem;
+  margin: 0.4rem 0;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 6px;
+  font-size: 0.9rem;
+  color: #e0e0e0;
+  border-left: 3px solid #4299e1;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+  .battle-field {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .battle-character {
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .vs-container {
+    order: 3;
+    margin: 1rem 0;
+  }
+  
+  .vs-text {
+    font-size: 2rem;
+  }
+}
