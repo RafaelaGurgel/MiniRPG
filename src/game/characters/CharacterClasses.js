@@ -1,6 +1,4 @@
-﻿// SEM IMPORTS — imagens agora vêm da pasta /public
-
-export const characterClasses = {
+﻿export const characterClasses = {
   warrior: {
     name: "Guerreiro",
     hp: 150,
@@ -54,13 +52,13 @@ export const enemies = {
     abilities: ["Machadada", "Investida", "Rugido"]
   },
 
-  darkMage: {
-    name: "Mago das Trevas",
-    hp: 120,
-    attack: 40,
-    defense: 5,
-    speed: 11,
-    sprite: "/mage.png", // provisório
-    abilities: ["Bola das Sombras", "Drenar Vida", "Maldição"]
-  }
-};
+    darkMage: {
+      name: "Mago das Trevas",
+      hp: 120,
+      attack: 40,
+      defense: 12,
+      speed: 14,
+      sprite: "/dark_mage.png",
+      abilities: ["Bola Sombria", "Maldição", "Roubo de Vida"]
+    }
+  };
