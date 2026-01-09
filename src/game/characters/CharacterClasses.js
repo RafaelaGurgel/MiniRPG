@@ -5,7 +5,7 @@
     attack: 25,
     defense: 20,
     speed: 8,
-    sprite: "/warrior.png",
+    sprite: "/assets/warrior.png",
     abilities: ["Ataque Poderoso", "Defesa Total", "Fúria Berserk"]
   },
 
@@ -15,7 +15,7 @@
     attack: 35,
     defense: 10,
     speed: 12,
-    sprite: "/mage.png",
+    sprite: "/assets/mage.png",
     abilities: ["Bola de Fogo", "Escudo Arcano", "Cura Divina"]
   },
 
@@ -25,7 +25,7 @@
     attack: 28,
     defense: 12,
     speed: 15,
-    sprite: "/archer.png",
+    sprite: "/assets/archer.png",
     abilities: ["Tiro Preciso", "Flecha Múltipla", "Furtividade"]
   }
 };
@@ -38,7 +38,7 @@ export const enemies = {
     attack: 18,
     defense: 8,
     speed: 10,
-    sprite: "/goblin.png",
+    sprite: "/assets/goblin.png",
     abilities: ["Golpe Rápido", "Mordida", "Fuga"]
   },
 
@@ -48,7 +48,7 @@ export const enemies = {
     attack: 30,
     defense: 15,
     speed: 7,
-    sprite: "/warrior.png", // provisório
+    sprite: "/assets/warrior.png", // provisório
     abilities: ["Machadada", "Investida", "Rugido"]
   },
 
@@ -58,7 +58,7 @@ export const enemies = {
       attack: 40,
       defense: 12,
       speed: 14,
-      sprite: "/dark_mage.png",
+      sprite: "/assets/dark_mage.png",
       abilities: ["Bola Sombria", "Maldição", "Roubo de Vida"]
     }
   };
