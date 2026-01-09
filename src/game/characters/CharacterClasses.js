@@ -1,10 +1,9 @@
-// IMPORTAÇÃO DAS IMAGENS (Vite exige isso quando está em src/)
-import warriorImg from "../../assets/images/warrior.png";
-import mageImg from "../../assets/images/mage.png";
-import archerImg from "../../assets/images/archer.png";
+import warriorImg from "../../../assets/images/warrior.png";
+import mageImg from "../../../assets/images/mage.png";
+import archerImg from "../../../assets/images/archer.png";
 
-import goblinImg from "../../assets/images/goblin.png";
-import darkMageImg from "../../assets/images/dark_mage.png";
+import goblinImg from "../../../assets/images/goblin.png";
+import darkMageImg from "../../../assets/images/dark_mage.png";
 
 // CLASSES DO JOGADOR
 export const characterClasses = {
