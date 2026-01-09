@@ -1,11 +1,20 @@
-﻿export const characterClasses = {
+// IMPORTAÇÃO DAS IMAGENS (Vite exige isso quando está em src/)
+import warriorImg from "../../assets/images/warrior.png";
+import mageImg from "../../assets/images/mage.png";
+import archerImg from "../../assets/images/archer.png";
+
+import goblinImg from "../../assets/images/goblin.png";
+import darkMageImg from "../../assets/images/dark_mage.png";
+
+// CLASSES DO JOGADOR
+export const characterClasses = {
   warrior: {
     name: "Guerreiro",
     hp: 150,
     attack: 25,
     defense: 20,
     speed: 8,
-    sprite: "/assets/images/warrior.png",
+    sprite: warriorImg,
     abilities: ["Ataque Poderoso", "Defesa Total", "Fúria Berserk"]
   },
 
@@ -15,7 +24,7 @@
     attack: 35,
     defense: 10,
     speed: 12,
-    sprite: "/assets/images/mage.png",
+    sprite: mageImg,
     abilities: ["Bola de Fogo", "Escudo Arcano", "Cura Divina"]
   },
 
@@ -25,7 +34,7 @@
     attack: 28,
     defense: 12,
     speed: 15,
-    sprite: "/assets/images/archer.png",
+    sprite: archerImg,
     abilities: ["Tiro Preciso", "Flecha Múltipla", "Furtividade"]
   }
 };
@@ -38,7 +47,7 @@ export const enemies = {
     attack: 18,
     defense: 8,
     speed: 10,
-    sprite: "/assets/images/goblin.png",
+    sprite: goblinImg,
     abilities: ["Golpe Rápido", "Mordida", "Fuga"]
   },
 
@@ -48,17 +57,17 @@ export const enemies = {
     attack: 30,
     defense: 15,
     speed: 7,
-    sprite: "/assets/images/warrior.png", // provisório
+    sprite: warriorImg, // provisório
     abilities: ["Machadada", "Investida", "Rugido"]
   },
 
-    darkMage: {
-      name: "Mago das Trevas",
-      hp: 120,
-      attack: 40,
-      defense: 12,
-      speed: 14,
-      sprite: "/assets/images/dark_mage.png",
-      abilities: ["Bola Sombria", "Maldição", "Roubo de Vida"]
-    }
-  };
+  darkMage: {
+    name: "Mago das Trevas",
+    hp: 120,
+    attack: 40,
+    defense: 12,
+    speed: 14,
+    sprite: darkMageImg,
+    abilities: ["Bola Sombria", "Maldição", "Roubo de Vida"]
+  }
+};
